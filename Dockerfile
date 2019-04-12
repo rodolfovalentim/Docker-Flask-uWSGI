@@ -5,9 +5,16 @@ RUN apk add --virtual .build-dependencies \
             python3-dev \
             build-base \
             linux-headers \
-            pcre-dev
+            pcre-dev \
+            libffi-dev \ 
+            openssl-dev 
 
 RUN apk add --no-cache pcre
+
+ADD ./tools /usr/local/tools
+WORKDIR /usr/local/tools/flask-autodoc
+RUN ls
+RUN python setup.py install
 
 WORKDIR /app
 COPY /app /app

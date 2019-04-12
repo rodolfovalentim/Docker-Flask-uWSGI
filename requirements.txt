@@ -1,2 +1,9 @@
 Flask
 uwsgi
+openstacksdk
+flask-autodoc
+python-novaclient
+keystoneauth1
+gnocchiclient
+requests
+flask-cors

@@ -1,0 +1,10 @@
+clouds:
+  nerds:
+    region_name: RegionOne
+    auth:
+      username: 'admin'
+      user_domain_name: Default
+      project_domain_name: Default
+      password: 'stack'
+      project_name: 'admin'
+      auth_url: 'http://192.168.0.103:5000/v3'
